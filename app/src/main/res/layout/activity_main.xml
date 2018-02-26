@@ -104,7 +104,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:scaleType="fitStart"
+                android:scaleType="centerCrop"
                 android:src="@drawable/queenbee"
                 android:id="@+id/queen_bee_pic"
                 android:contentDescription="@string/queen_bee_description" />
@@ -114,19 +114,19 @@
                 android:layout_height="wrap_content"
                 android:text="@string/grade_quiz"
                 android:id="@+id/btn_grader"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
                 android:onClick="gradeItAll"
-                />
+                android:layout_alignTop="@id/queen_bee_pic"
+                android:layout_alignStart="@id/queen_bee_pic"
+                android:layout_alignLeft="@id/queen_bee_pic" />
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/reset_responses"
                 android:id="@+id/reset"
                 android:layout_alignTop="@id/queen_bee_pic"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:onClick="resetItAll"/>
+                android:layout_alignRight="@id/queen_bee_pic"
+                android:onClick="resetItAll"
+                android:layout_alignEnd="@id/queen_bee_pic" />
         </RelativeLayout>
 
     </LinearLayout>
